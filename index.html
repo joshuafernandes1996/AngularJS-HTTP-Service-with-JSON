@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="myMod">
+    <head>
+        <script src="angular.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body>
+
+        <div  ng-controller="myController">
+                {{ error }}<br><br>
+                <ul ng-repeat="post in posts">
+                    <li ng-repeat="p in post">
+                         <pre>Roll No: {{ p.rollno }}</pre>
+                         <pre>Name: {{ p.name }}</pre>
+                         <pre>Gender: {{ p.gender }} </pre>
+                    </li>
+                </ul>
+        </div>
+    </body>
+</html>
